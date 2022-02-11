@@ -1,0 +1,533 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Giovanny />  </title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		  <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!-- webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+		<!-- webfonts -->
+	</head>
+	<body>
+		<!-- container -->
+			<!-- header -->
+			<div id="home" class="header">
+				<div class="container">
+				<!-- top-hedader -->
+				<div class="top-header">
+					<!-- logo -->
+					<div class="logo">
+						<a href="#"><img src="images/logo.png" title="Gio" /></a>
+					</div>
+					<!-- /logo -->
+					<!--top-nav---->
+					<div class="top-nav">
+						<div class="nav-icon">
+					    <a href="#" class="right_bt" id="activator"><span> </span> </a>
+						</div>
+						 <div class="box" id="box">
+							 <div class="box_content">        					                         
+								<div class="box_content_center">
+								 	<div class="form_content">
+								 		<a class="nav-logo" href="#"><img src="images/logo.png" title="Gio" /></a>
+										<div class="menu_box_list">
+											<ul>
+												<li class="active"><a href="#home" class="scroll"><span>Inicio</span></a></li>
+												<li><a href="#about" class="scroll"><span>Acerca de mi</span></a></li>
+												<li><a href="#services" class="scroll"><span>Servicios</span></a></li>
+												<li><a href="#port" class="scroll"><span>Portafolio</span></a></li>
+												<li><a href="#contact" class="scroll"><span>Contacto</span></a></li>
+												<div class="clear"> </div>
+											</ul>
+										</div>
+										<a class="boxclose" id="boxclose"> <span> </span></a>
+									</div>                                  
+								</div> 	
+							</div> 
+						</div>       	  
+					</div>
+					<!---start-click-drop-down-menu----->
+			        <!----start-dropdown--->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("slow");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+					<!---//End-click-drop-down-menu----->
+					<!--top-nav---->
+					<div class="clearfix"> </div>
+				</div>
+				<!-- /top-hedader -->
+				<!-- welcome-note -->
+				<div class="welcome-note">
+					<!-- 
+					<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+									    $(document).ready(function() {
+									      $("#owl-demo").owlCarousel({
+									        items : 1,
+									        lazyLoad : false,
+									        autoPlay : true,
+									        navigation : false,
+									        navigationText :  false,
+									        pagination : true,
+									      });
+									    });
+									  </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<div class="note">
+											<h1>Hola, Soy  <span>Giovanny</span> <p>Un  <span>Ingeniero </span> de Sistemas </p></h1>
+										</div>
+					                </div>
+					                 <div class="item">
+					                	<div class="note">
+											<h1>Hello, I'm <span>Giovanny</span> <p>A <span>Enginer</span> System</p></h1>
+										</div>
+					                </div>
+					                 
+				              </div>
+						<!--//sreen-gallery-cursual---->	
+				</div>
+				<!-- welcome-note -->
+				<!-- top-grids -->
+				<div class="top-grids">
+					<div class="col-md-3 top-grid text-center grid-active">
+						<span class="icon1"> </span>
+						<h3>.Diseñador Web</h3>
+						<a class="t-btn" href="#services">Leer más</a>
+					</div>
+					<div class="col-md-3 top-grid text-center">
+						<span class="icon2"> </span>
+						<h3>.Administrador Unix</h3>
+						<a class="t-btn" href="#services">Leer más</a>
+					</div>
+					<div class="col-md-3 top-grid text-center">
+						<span class="icon3"> </span>
+						<h3>.Monitoreo de servidores</h3>
+						<a class="t-btn" href="#services">Leer más</a>
+					</div>
+					<div class="col-md-3 top-grid text-center">
+						<span class="icon4"> </span>
+						<h3>.Fotografia</h3>
+						<a class="t-btn" href="#services">Leer más</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-- top-grids -->
+			</div>
+			</div>
+			<!-- /header -->
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo1").owlCarousel({
+						items : 1,
+						lazyLoad : false,
+						autoPlay : true,
+						navigation : false,
+						navigationText :  false,
+						pagination : true,
+					});
+				});
+			</script>
+			<!-- about -->
+			<div id="about" class="about">
+				<div class="col-md-6 about-left">
+					<div id="owl-demo1" class="owl-carousel owl-carousel2">
+					                <div class="item">
+					                	<div class="about-left-grid">
+											<h2>Hola! Soy  <span>Giovanny Orjuela</span></h2>
+											<p>Soy ingeniero de sistemas con aproximadamente 3 años de experiencia en la gestión de sistemas operativos Linux y AIX. Interesado en nuevas tecnologías de infraestructura como un código como Ansible y vagrant y container docker, kubernetes.</p>
+											<p> Con capacidad de análisis, creatividad, iniciativa, trabajo en equipo, mejora continua y orientación a resultados. </p>							
+											<p> Certificado de Red Hat  ID:190-028-894 </p> 
+
+											<ul>
+												<li><a class="a-btn-h" href="hvGiovannyOrjuela.pdf" download="HV PDF" target=”_blank”>Descargar HV</a></li>
+											</ul>
+										</div>
+					                </div>
+					                  <div class="item">
+					                	<div class="about-left-grid">
+											<h2>Hi! I'm <span>Giovanny Orjuela</span></h2>
+											<p>I am system enginer with around 3 years of experience managing system operative linux and AIX. Interested in new technologies of infrastructure as a code like Ansible and vagrant and container docker, kubernetes.</p>
+											<p> With analysis capability, creativity, initiative, teamwork, continuous improvement and orientation to results </p>
+											<p> Red Hat Certified ID:190-028-894 </p> 
+											<ul>
+												<li><a class="a-btn-h" href="HV-GiovannyO.pdf" download="HV PDF" target=”_blank”>Descargar HV</a></li>
+											</ul>
+										</div>
+					                </div>
+					                
+					</div>
+				</div>
+				<div class="col-md-6 about-right">
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- /about -->
+			<!-- services -->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head text-center">
+						<h3>Mis <span>Servicios</span></h3>
+						
+					</div>
+					<!-- services-grids -->
+					<div class="services-grids">
+						<div class="col-md-6 services-grid">
+							<div class="services-grid-icon">
+								<span class="s-icon1"> </span>
+							</div>
+							<div class="services-grid-info">
+								<h4>Diseño Web</h4>
+								<p>Desarrollo de Sitio Web y Plataforma de Administración con HTML5, CSS3 (Responsive Design) y JavaScript (JQuery)..</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+							<div class="col-md-6 services-grid">
+							<div class="services-grid-icon">
+								<span class="s-icon2"> </span>
+							</div>
+							<div class="services-grid-info">
+								<h4>Sysadmin</h4>
+								<p>Administrador de Servidores Unix, garantizo el buen funcionamiento de la infraestructura TI de una empresa, automatizo tareas con Ansible.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+							<div class="col-md-6 services-grid">
+							<div class="services-grid-icon">
+								<span class="s-icon3"> </span>
+							</div>
+							<div class="services-grid-info">
+								<h4>Monitoreo de servidores</h4>
+								<p>Implemento monitoreo sobre servidores, asegurando el buen funcionamiento de la  infraestructura tecnológica, TICK stack.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+							<div class="col-md-6 services-grid">
+							<div class="services-grid-icon">
+								<span class="s-icon4"> </span>
+							</div>
+							<div class="services-grid-info">
+								<h4>Fotografia</h4>
+								<p>Amante de la fotografia.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- services-grids -->
+				</div>
+			</div>
+			<!-- services -->
+			<!-- clients -->
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo2").owlCarousel({
+						items : 5,
+						lazyLoad : false,
+						autoPlay : true,
+						navigation : true,
+						navigationText :  true,
+						pagination : false,
+					});
+				});
+			</script>
+			 <div class="clients">
+				<div class="container">
+					<h3>Algunas increíbles herramientas o SO con las que he tenido el placer de trabajar.</h3>
+					<div id="owl-demo2" class="owl-carousel">
+					     <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/AIX.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/rhel.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/docker.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/suse.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/kubernetes.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					      <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/influx.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/vmware.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/ansible.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <!--<div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/client-logo4.png" title="name" /></a>    
+							</div>      	
+					      </div>
+					       <div class="item">
+					      	<div class="client-logo">
+								<a href="#"><img src="images/client-logo5.png" title="name" /></a>    
+							</div>      	
+					      </div>  -->
+					</div>
+				</div>
+			</div> 
+			<!-- clients -->
+			<!-- portfolio -->
+			<div id="port" class="portfolio">
+				<div class="container">
+					<div class="portfolio-head text-center">
+						<h2>Echa un vistazo a algunos de mis <p><span>últimos</span> y <span>mejores</span> proyectos</p></h2>
+						<p> Para mas detalles por favor enviar un mensaje a contactos.  </p>
+					</div>
+					<!-- portfolio-grids -->
+					<div class="portfolio-grids">
+						<div class="col-md-4 portfolio-grid">
+							<div class="portfolio-grid-pic">
+								<img src="images/sicbyteweb.jpg" title="name" />
+								<div class="portfolio-grid-pic-caption">
+									<a href="#">Ver más</a>
+								</div>
+							</div>
+							<div class="portfolio-grid-info text-center">
+								<h5>PAGINAS WEB	</h5>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-grid">
+							<div class="portfolio-grid-pic">
+								<img src="images/stack.png" title="name" />
+								<div class="portfolio-grid-pic-caption">
+									<a href="#">Ver más</a>
+								</div>
+							</div>
+							<div class="portfolio-grid-info text-center">
+								<h5>MONITOREO SERVIDORES</h5>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-grid">
+							<div class="portfolio-grid-pic">
+								<img src="images/coleo.jpeg" title="name" />
+								<div class="portfolio-grid-pic-caption">
+									<a href="#">Ver más</a>
+								</div>
+							</div>
+							<div class="portfolio-grid-info text-center">
+								<h5>FOTOGRAFIAS</h5>
+							</div>
+						</div>
+						<!-- <div class="col-md-4 portfolio-grid">
+							<div class="portfolio-grid-pic">
+								<img src="images/stack.png" title="name" />
+								<div class="portfolio-grid-pic-caption">
+									<a href="#">Full Project</a>
+								</div>
+							</div>
+							<div class="portfolio-grid-info text-center">
+								<h5>OneTitle Logo Branding</h5>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-grid">
+							<div class="portfolio-grid-pic">
+								<img src="images/coleo.jpeg" title="name" />
+								<div class="portfolio-grid-pic-caption">
+									<a href="#">Full Project</a>
+								</div>
+							</div>
+							<div class="portfolio-grid-info text-center">
+								<h5>OneTitle Logo Branding</h5>
+							</div>
+						</div>
+						<div class="col-md-4 portfolio-grid">
+							<div class="portfolio-grid-pic">
+								<img src="images/coleo.jpeg" title="name" />
+								<div class="portfolio-grid-pic-caption">
+									<a href="#">Full Project</a>
+								</div>
+							</div> 
+							<div class="portfolio-grid-info text-center">
+								<h5>OneTitle Logo Branding</h5>
+							</div> -->
+						
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- portfolio-grids -->
+				</div>
+			</div>
+			<!-- portfolio -->
+			<!-- Feedback -->
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo3").owlCarousel({
+						items : 1,
+						lazyLoad : false,
+						autoPlay : true,
+						navigation : false,
+						navigationText :  true,
+						pagination :true,
+					});
+				});
+			</script>
+			<div class="feedback">
+				<div class="container">
+					<div id="owl-demo3" class="owl-carousel owl-carousel1">
+					     
+					 
+					     <div class="item">
+					     	<div class="feedback-grid text-center">
+								<p>"Todo lo que somos surge con nuestros pensamientos. Con nuestros pensamientos hacemos el mundo. "</p>
+								<h4>Gautama Buddha<span> </span></h4>
+							</div>
+					     </div>
+					     
+						<!-- ## Por si queremos agregar otra frace
+                           <div class="item">
+					     	<div class="feedback-grid text-center">
+								<p>"Loved the graphics very much and so happy I found this very talented designer. He pays attention to detail and prompt. Work we delivered before deadline."</p>
+								<h4>Shauna Graham,<span> Alo Group</span></h4>
+							</div>
+					     </div> -->
+					 </div>
+				</div>
+			<!-- Feedback -->
+			</div>
+			<!-- contact -->
+			<div id="contact" class="contact">
+				<div class="container">
+					<div class="contact-head text-center">
+						<h3>Tienes un <span>Proyecto!</span></h3>
+						<p>Solo enviame un mensaje :) </p>
+					</div>
+					<!-- contact-grids -->
+					<div class="contact-grids">
+						<div class="col-md-4 contact-left">
+							<ul>
+								<li><a class="facebook" href="https://web.facebook.com/giovannyorjuel2" target=”_blank” ><span> </span></a></li>
+								<li><a class="twitter"  href="#"><span> </span></a></li>
+								<li><a class="Instragram" href="https://www.instagram.com/giovannyorjuel2/?hl=es-la" target=”_blank” ><span> </span></a></li>
+								<li><a class="dribbble" href="https://dribbble.com/poswark" target=”_blank”><span> </span></a></li>
+							</ul>
+						</div>
+						<div class="col-md-8 contact-right">
+							<form>
+								<div class="text-boxs">
+									<div class="text-box">
+										<input type="text" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+									</div>
+									<div class="text-box">
+										<input type="text" value="Apellido" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last name';}">
+									</div>
+									<div class="text-box">
+										<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}">
+									</div>
+									<div class="text-box">
+										<input type="text" value="Nombre del proyecto" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Project name';}">
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="subject">
+									<textarea>Mensaje.......</textarea>
+									<input type="submit" value="" />
+								</div>
+							</form>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- contact-grids -->
+				</div>
+			</div>
+			<!-- contact -->
+			<!-- footer -->
+			<div class="footer">
+				<div class="container">
+					<p>Template by <a href="http://w3layouts.com/">w3layouts</a></p>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+			<!-- footer -->
+		<!-- /container -->
+	</body>
+</html>
+
