@@ -10,8 +10,7 @@ pipeline {
             steps {
                 script {
                     DockerBuild.build(image: "${image}",
-                                      tag: "${tag}",
-                                      context: .)
+                                      tag: "${tag}")
                 echo 'Building..'
                 }
             }
