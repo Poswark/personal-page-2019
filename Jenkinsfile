@@ -33,16 +33,6 @@ pipeline {
                 sh "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:latest image --insecure poswark/${params.image}:${params.tag}"
             }
         }
-        stage('Push to Registry') {
-            steps {
-                script {
-                    def imageTag = "poswark/${params.image}:${params.tag}"
-                    sh "docker tag ${params.image}:${params.tag} ${imageTag}"
-                    sh "docker push ${imageTag}"
-                    echo 'Image pushed to: https://hub.docker.com/repository/docker/poswark/demo_web/general'
-                }
-            }
-        }
     }
     post {
         success {
