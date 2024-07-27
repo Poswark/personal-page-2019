@@ -3,14 +3,14 @@ pipeline {
     agent any
     parameters {
         string(name: 'image', defaultValue: 'personal-page', description: 'Image name')
-        string(name: 'tag', defaultValue: '0.0.1', description: 'Image version')
+        string(name: 'tag', defaultValue: 'personal-page', description: 'Image version')
     }
     stages {
         stage('Build') {
             steps {
                 script {
-                    DockerBuild.build(image: "${image}",
-                                      tag: "${tag}")
+                    DockerBuild.build(image: "personal-page",
+                                      tag: "0.0.1")
                 echo 'Building..'
                 }
             }
