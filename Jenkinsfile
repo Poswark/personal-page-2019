@@ -12,7 +12,10 @@ pipeline {
             steps {
                 withCredentials([file(credentialsId: 'KANIKO_JSON', variable: 'DOCKER_CONFIG_JSON')]) {
                     script {
-                        DockerBuild.build(this, [image: "${params.image}", tag: "${params.tag}", dockerConfig: env.DOCKER_CONFIG_JSON])
+                        sh "cp ${env.DOCKER_CONFIG_JSON} kaniko/docker.config.json"
+
+                        // Llama a la función DockerBuild para construir la imagen
+                        DockerBuild.build(this, [image: "${params.image}", tag: "${params.tag}", dockerConfig: 'kaniko/docker.config.json'])
                         echo 'Building..'
                     }
                 }
