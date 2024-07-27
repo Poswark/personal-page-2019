@@ -13,7 +13,7 @@ pipeline {
                                       params.tag: ${params.tag},
                                       params.Context: .)
                 echo 'Building..'
-
+                }
             }
         }
         stage('Pruebas Unitarias') {
