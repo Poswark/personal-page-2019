@@ -29,7 +29,8 @@ pipeline {
         }
         stage('Security Scan') {
             steps {
-                sh "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:latest image --insecure ${params.image}:${params.tag}"
+                sh "docker pull poswark/${params.image}:${params.tag}"
+                sh "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:latest image --insecure poswark/${params.image}:${params.tag}"
             }
         }
         stage('Push to Registry') {
