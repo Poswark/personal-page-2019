@@ -9,8 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    DockerBuild.build(image: "personal-page",
-                                      tag: "0.0.1")
+                    DockerBuild.build(image:"personal-page",
+                                      tag:0.0.1)
                 echo 'Building..'
                 }
             }
