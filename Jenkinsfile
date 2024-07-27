@@ -11,7 +11,7 @@ pipeline {
                 script {
                     DockerBuild.build(image: "${image}",
                                       tag: "${tag}",
-                                      Context: .)
+                                      context: .)
                 echo 'Building..'
                 }
             }
