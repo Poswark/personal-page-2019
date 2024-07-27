@@ -1,4 +1,6 @@
 @Library('sharedLibrary') _
+import com.yourcompany.DockerBuild
+
 pipeline {
     agent any
     parameters {
