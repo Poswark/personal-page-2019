@@ -1,5 +1,5 @@
 @Library('sharedLibrary') _
-import src.boxung.DockerBuild
+import boxung.DockerBuild
 
 pipeline {
     agent any
