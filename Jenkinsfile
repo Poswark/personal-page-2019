@@ -9,9 +9,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    DockerBuild.build(params.image: "${params.image}",
-                                      params.tag: "${params.tag}",
-                                      params.Context: .)
+                    DockerBuild.build(image: "${image}",
+                                      tag: "${tag}",
+                                      Context: .)
                 echo 'Building..'
                 }
             }
