@@ -10,9 +10,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
-                    DockerBuild.build(this, [image: "${params.image}", tag: "${params.tag}"])
-                    echo 'Building..'
+                withCredentials([file(credentialsId: 'KANIKO_JSON', variable: 'DOCKER_CONFIG_JSON')]) {
+                    script {
+                        DockerBuild.build(this, [image: "${params.image}", tag: "${params.tag}", dockerConfig: env.DOCKER_CONFIG_JSON])
+                        echo 'Building..'
+                    }
                 }
             }
         }
