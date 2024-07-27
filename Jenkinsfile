@@ -1,3 +1,4 @@
+@library('shared-library') _
 pipeline {
     agent any
     parameters {
@@ -7,8 +8,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                script {
+                    DockerBuild.build(params.image: "${image}",
+                                      params.tag: ${params.tag},
+                                      params.Context: .)
                 echo 'Building..'
-                sh "docker  build  --no-cache -t ${image}:${tag} . "
 
             }
         }
